@@ -8,9 +8,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 
-class ColorsAdapter (private var colors: List<Int>, context: Context)
+class ColorsAdapter (private var colors: List<Int>, val context: Context)
     : RecyclerView.Adapter<ColorsAdapter.ColorViewHolder>() {
-    private var context = context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ColorViewHolder {
         val view = LayoutInflater.from(parent.context)
