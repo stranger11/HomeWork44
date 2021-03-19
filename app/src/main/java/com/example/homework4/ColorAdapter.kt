@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ColorsAdapter (private var colors: List<Int>, context: Context)
     : RecyclerView.Adapter<ColorsAdapter.ColorViewHolder>() {
-    var context = context
+    private var context = context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ColorViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -24,8 +24,9 @@ class ColorsAdapter (private var colors: List<Int>, context: Context)
 
     override fun getItemCount(): Int = colors.size
 
-    class ColorViewHolder(view: View) : RecyclerView.ViewHolder(view){
+    class ColorViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private var root: View = view.findViewById(R.id.color)
+
         fun bind(color:Int, context: Context) {
             root.setBackgroundColor(color)
             root.setOnClickListener {
