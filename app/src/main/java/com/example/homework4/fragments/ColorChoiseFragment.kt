@@ -15,7 +15,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.homework4.R
 
-
 private const val POSITION = "position"
 
 class ColorChoiseFragment : Fragment() {

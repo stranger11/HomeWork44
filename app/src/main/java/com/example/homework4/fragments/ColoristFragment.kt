@@ -46,6 +46,7 @@ class ColoristFragment : Fragment() {
             countResult(buttonResultHex.text.toString(), textBuffer.text.toString())
             createBackgroundColor(buttonResultHex, buttonResultHex2)
         }
+
         buttonResultHex2.setOnClickListener {
             countResult(buttonResultHex2.text.toString(), textBuffer.text.toString())
             createBackgroundColor(buttonResultHex, buttonResultHex2)
